@@ -1,0 +1,12 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:14
+    ports: 
+      - '5436:5432'
+    environment:
+      POSTGRES_USER: mohi
+      POSTGRES_PASSWORD: 117110
+      POSTGRES_DB: mfdb_mk2
+    volumes:
+      - .mfdbdata:/var/lib/postgresql/data
